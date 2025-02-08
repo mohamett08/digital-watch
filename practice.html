@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building-Clock</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#337f85] font-sans font-[27px]">
+    <div class="whole">
+        <div class="relative w-72 h-72 bg-[lightyellow] rounded-full flex items-center justify-center border-10 border-white">
+            <!-- Aroows-ki waqtiga shegaye -->
+            <div class="elements absolute b-[50%] l-[50%] ">
+                <div class=" hour w-[4px] h-[45%] bg-white" id="Hour"></div>
+                <div class="elements min" id="Min"></div>
+                <div class="elements sec" id="Sec"></div>
+                <div class="elements center"></div>
+            </div>
+            <!-- 12-ki Sac -->
+            <div class="absolute w-full h-full font-bold">
+                <div class="absolute transform -translate-x-1/2 -translate-y-1/2 top-[12%] left-[75%] rotate-[30deg]">1</div>
+                <div class="absolute transform -translate-x-1/2 -translate-y-1/2 top-[30%] left-[90%] rotate-[60deg]">2</div>
+                <div class="absolute transform -translate-x-1/2 -translate-y-1/2 top-[50%] left-[97%] rotate-[90deg]">3</div>
+                <div class="absolute transform -translate-x-1/2 -translate-y-1/2 top-[70%] left-[90%] rotate-[120deg]">4</div>
+                <div class="absolute transform -translate-x-1/2 -translate-y-1/2 top-[88%] left-[75%] rotate-[150deg]">5</div>
+                <div class="absolute transform -translate-x-1/2 -translate-y-1/2 bottom-[-4%] left-1/2 rotate-[180deg]">6</div>
+                <div class="absolute transform -translate-x-1/2 -translate-y-1/2 bottom-[3%] left-[28%] rotate-[210deg]">7</div>
+                <div class="absolute transform -translate-x-1/2 -translate-y-1/2 bottom-[18%] left-[12%] rotate-[240deg]">8</div>
+                <div class="absolute transform -translate-x-1/2 -translate-y-1/2 bottom-[38%] left-[5%] rotate-[270deg]">9</div>
+                <div class="absolute transform -translate-x-1/2 -translate-y-1/2 bottom-[60%] left-[9%] rotate-[300deg]">10</div>
+                <div class="absolute transform -translate-x-1/2 -translate-y-1/2 bottom-[78%] left-[23%] rotate-[330deg]">11</div>
+                <div class="absolute transform -translate-x-1/2 -translate-y-1/2 top-[6%] left-1/2 rotate-[0deg]">12</div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
